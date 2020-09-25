@@ -27,7 +27,7 @@ public class TesseractOcrPlugin implements MethodCallHandler {
       final String imagePath = call.argument("imagePath");
       final String psm = call.argument("psm");
       String DEFAULT_LANGUAGE = "eng";
-      int DEFAULT_PAGE_SEG_MODE = TessBaseAPI.PageSegMode.PSM_AUTO;
+      int DEFAULT_PAGE_SEG_MODE = TessBaseAPI.PageSegMode.PSM_AUTO_OSD;
       if(call.argument("language") != null){
         DEFAULT_LANGUAGE = call.argument("language");
       }
